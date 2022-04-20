@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+/* header */
+header {
+    background: black;
+    opacity: 0.8;
+    width: 100%;
+    position: fixed;
+    padding: 15px 0;
+    z-index: 500;
+    font-size: 12px;
+}
+header .inner-header{
+    margin: 0 auto;
+    width: 1000px;
+}
+header .inner-header li {
+    float: left;
+    width: 7.6%;
+    color: white;
+    /* background: red; */
+}
+header .inner-header li:last-child {
+    margin-right: 0;
+}
+.picture {
+    background: url(../img/girl.jpg) no-repeat center / cover;
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+.picture h1 {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+}
+/* goods */
+.goods {
+    /* background: tomato; */
+    width: 1000px;
+    margin: 0 auto;
+}
+.goods li {
+    text-align: center;
+    /* background: green; */
+    float: left;
+    width: 120px;
+    margin: 50px 0px 50px 20px;
+}
+/* block를 줘야 마진이나패딩을쓸수있다 */
+.goods li a img {
+    margin-bottom: 20px;
+    width: 100%;
+}
+.goods li a span {
+    /* background: skyblue; */
+}
+.goods li a span:hover {
+    text-decoration: underline;
+}
+/* 서비스 센터 */
+.service-center {
+    width: 1000px;
+    margin: 10px auto;
+    height: 200px;
+    /* background: green; */
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.service-center li {
+    /* background: tomato; */
+    float: left;
+    width: 30%;
+    margin-left: 2.5%;
+    margin-top: 65px;
+    /* background: tomato; */
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+.service-center li:nth-child(3) {
+    border-right: none;
+}
+.service-center li img {
+    width: 50px;
+    /* background: red; */
+    display: block;
+    margin: 5px auto;
+
+}
+.service-center li span {
+    color: skyblue;
+}
+/* serach */
+.search {
+    margin: 50px 0;
+    box-sizing: border-box;
+    /* background: green; */
+}
+.search li {
+    width: 1000px;
+    /* background: black; */
+    margin: 0 auto;
+}
+.search li span {
+    /* background: aqua; */
+    display: block;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.search li .search-box {
+    /* background: aqua; */
+    position: relative;
+}
+.search li .search-box > input {
+    /* background: black; */
+    display: block;
+    width: 700px;
+    height: 50px;    
+    font-size: 20px;
+    opacity: 0.5;
+    margin: 0 auto;
+    position: relative;
+    /* background: red; */
+    padding-left: 40px;
+}
+.search li .search-box > div {
+    /* background: violet; */
+    position: absolute;
+    top: 15px;
+    left: 140px;
+}
+.search li .search-box > div i {
+    color: black;
+    font-size: 26px;
+    opacity: 0.2;
+}
+
+/* service */
+.service {
+    /* background: tomato; */
+    width: 1000px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+    
+}
+.service > li {
+    width: 50%;
+    float: left;
+    height: 500px;
+}
+.service > li em {
+    font-size: 30px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 20px;
+}
+.service > li span {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 20px;
+    /* 라인줄 */
+    line-height: 1.5;
+}
+.service > li strong {
+    color: blue;
+}
+.service > li strong:hover {
+    text-decoration: underline;
+}
+.live {
+    width: 900px;
+    margin: 0 auto;
+    /* background: tomato; */
+    height: 300px;
+    padding-top: 50px;
+
+}
+.live > li:nth-child(1) {
+    float: left;
+    width: 50%;
+}
+.live > li:nth-child(1) em {
+    font-size: 40px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 20px;
+}
+.live > li:nth-child(1) span {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 20px;
+    /* 라인줄 */
+    line-height: 1.5;
+}
+.live > li:nth-child(1) strong {
+    color: blue;
+}
+.live > li:nth-child(1) strong:hover {
+    text-decoration: underline;
+}
+.live > li:nth-child(2) {
+    float: right;
+    width: 50%;
+    height: 200px;
+}
+.live > li:nth-child(2) img {
+    height: 100%;
+}
+/* support */
+.support {
+    height: 400px;
+    position: relative;
+}
+.support li {
+    /* background: red; */
+    position: absolute;
+    top: 100px;
+    left: 30px;
+}
+.support img {
+    width: 100%;
+    height: 100%;
+}
+.support > li em {
+    font-size: 40px;
+    color: #eee;
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.support > li span {
+    color: #eee;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 20px;
+}
+.support > li strong {
+    color: skyblue;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 20px;
+}
+.support > li strong:hover {
+    text-decoration: underline;
+}
+.support > li b {
+    color: skyblue;
+    font-size: 20px;
+    display: block;
+}
+.support > li b:hover {
+    text-decoration: underline;
+}
+/* AppleCare */
+.AppleCare {
+    width: 800px;
+    margin: 50px auto;
+    /* background: red; */
+}
+.AppleCare > img {
+    width: 50%;
+    float: left;
+}
+.AppleCare > li em {
+    font-size: 25px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 20px;
+}
+.AppleCare > li span {
+    display: block;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.AppleCare > li strong {
+    color: blue;
+}
+.AppleCare > li strong:hover {
+    text-decoration: underline;
+}
+.My-support {
+    width: 1000px;
+    margin: 50px auto;
+    padding: 50px 50px;
+    /* background: red; */
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.My-support > li:nth-child(1) {
+    float: left;
+    width: 50%;
+}
+.My-support > li em {
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.My-support > li span {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.My-support > li strong {
+    display: block;
+    font-size: 20px;
+    color: skyblue;
+}
+.My-support > li strong:hover {
+    text-decoration: underline;
+}
+.My-support > li:nth-child(2) {
+    float: right;
+    width: 50%;
+}
+.My-support > li img {
+    width: 100%;
+}
+.attention {
+    width: 1000px;
+    margin: 50px auto;
+    padding: 0 100px;
+    /* background: red; */
+}
+.attention > li:nth-child(1) {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.attention > li:nth-child(2) {
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.attention > li:nth-child(2) > span {
+    color: blue;
+}
+.attention > li:nth-child(2) > span:hover {
+    text-decoration: underline;
+}
+.attention > li:nth-child(3) {
+    line-height: 1.5;
+    text-align: center;
+}
+/* program */
+.program {
+    width: 1000px;
+    margin: 50px auto;
+    /* background: red; */
+    border-top: 1px solid #ccc;
+    padding: 50px 50px 50px 50px;
+}
+.program > li {
+    font-size: 20px;
+    color: blue;
+    margin-bottom: 20px;
+}
+.program > li:nth-child(1) {
+    font-size: 30px;
+    color: black;
+}
+.program > li:nth-child(n+2):hover {
+    text-decoration: underline;
+}
+footer {
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 12px;
+}
+footer ul li:nth-child(-n+1) {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+footer ul li:nth-child(n+2) {
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+footer ul:not(.apple-support) li:nth-child(n+2):hover {
+    text-decoration: underline;
+}
+footer ul:nth-child(2) {
+    width: 25%;
+    float: left;
+}
+footer ul:nth-child(3) {
+    width: 25%;
+    float: left;
+}
+footer ul:nth-child(4) {
+    width: 25%;
+    float: left;
+}
+footer ul:nth-child(5) {
+    width: 25%;
+    float: left;
+}
+footer .apple-support {
+    /* background: red; */
+    margin-bottom: 20px;
+    position: relative;
+}
+footer .apple-support img {
+    position: absolute;
+    top: 1px;
+}
+footer .apple-support li {
+    padding-top: 5px;
+    padding-left: 30px;
+}
+
+footer .Copyright {
+    float: left;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #000;
+    padding-top: 10px;
+    opacity: 0.5;
+}
+footer .Copyright li {
+    float: left;
+    margin-right: 10px;
+}
+footer .Copyright li:nth-child(1) {
+    font-weight: normal;
+    margin-right: 20px;
+}
+footer .Copyright li:nth-child(6) {
+    float: right;
+}
+footer .Copyright li:nth-child(2) {
+    border-right: 1px solid #000;
+    padding-right: 10px;
+}
+footer .Copyright li:nth-child(3) {
+    border-right: 1px solid #000;
+    padding-right: 10px;
+}
+footer .Copyright li:nth-child(4) {
+    border-right: 1px solid #000;
+    padding-right: 10px;
+}
+
